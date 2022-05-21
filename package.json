@@ -4,9 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check-types": "tsc --noEmit",
+    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js"
   },
   "keywords": [],
   "author": "Carlos Vergara <cfvergara@gmail.com>",
-  "license": "CC-BY-NC-SA-4.0"
+  "license": "CC-BY-NC-SA-4.0",
+  "dependencies": {
+    "esbuild": "^0.14.39",
+    "express": "^4.18.1",
+    "tormenta": "file:..",
+    "typescript": "^4.6.4"
+  }
 }
